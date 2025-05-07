@@ -1,0 +1,101 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--grey-900);
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+div {
+  text-align: center;
+  background-color: var(--grey-800);
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 375px) {
+  div {
+    padding: 20px;
+  }
+}
+
+img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-color: var(--white);
+}
+
+h1 {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+h3 {
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 12px;
+  color: var(--white);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+span {
+  color: var(--white);
+  display: block;
+  background-color: var(--grey-700);
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 250px;
+}
+
+span:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+span:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+}
